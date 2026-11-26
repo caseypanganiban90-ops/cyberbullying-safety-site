@@ -1,0 +1,257 @@
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #1f3a52;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #444444;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1f3a52;
+  background-color: #e9eef2;
+  border: 1px solid #888888;
+  padding: 8px 18px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #1f3a52;
+  color: #ffffff;
+  border-color: #1f3a52;
+}
+
+/* Main Content Layout */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #1f3a52;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e9eef2;
+  padding-bottom: 6px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #1f3a52;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul.content-list,
+ol.content-list {
+  margin-left: 22px;
+  margin-bottom: 14px;
+}
+
+ul.content-list li,
+ol.content-list li {
+  margin-bottom: 6px;
+}
+
+/* Color-Coded Legend & Matrix Table (Inspired by Periodic Table Style) */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.legend-table,
+.matrix-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 6px;
+}
+
+.legend-table td {
+  border: 1px solid #777777;
+  padding: 10px 8px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.matrix-table th {
+  background-color: #1f3a52;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 8px;
+  text-align: center;
+  border: 1px solid #1f3a52;
+}
+
+.matrix-table td {
+  border: 1px solid #777777;
+  padding: 12px 10px;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.code-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border: 1px solid #666666;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6px;
+}
+
+.cell-title {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #111111;
+}
+
+/* Signature Pastel Color-Coding Classes */
+.pastel-red { background-color: #ffd6d6; }
+.pastel-orange { background-color: #ffe5cc; }
+.pastel-blue { background-color: #d6eaff; }
+.pastel-green { background-color: #d4f4dd; }
+.pastel-teal { background-color: #d2f4f2; }
+.pastel-yellow { background-color: #fff3b0; }
+.pastel-purple { background-color: #f3d6ff; }
+.pastel-indigo { background-color: #e2dcff; }
+
+/* Figure & Illustration Box */
+figure {
+  background-color: #f9fbfc;
+  border: 1px dashed #888888;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+figure svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+figcaption {
+  font-size: 13px;
+  color: #444444;
+}
+
+/* Call-to-Action Link Button */
+.btn-link {
+  display: inline-block;
+  background-color: #1f3a52;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #1f3a52;
+  margin-top: 6px;
+}
+
+.btn-link:hover {
+  background-color: #2c5273;
+}
+
+/* Footer */
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  text-align: center;
+  font-size: 13px;
+  color: #444444;
+  padding: 16px;
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  .legend-table,
+  .legend-table tbody,
+  .legend-table tr,
+  .legend-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .legend-table td {
+    margin-bottom: 6px;
+  }
+}
